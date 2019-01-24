@@ -12,9 +12,12 @@
 		A7FD8FE721F6098A001B23A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FD8FE521F6098A001B23A0 /* Main.storyboard */; };
 		A7FD8FE921F6099C001B23A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FD8FE821F6099C001B23A0 /* Assets.xcassets */; };
 		A7FD8FEC21F6099C001B23A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FD8FEA21F6099C001B23A0 /* LaunchScreen.storyboard */; };
+		CF2F05B5A07B6C9E240C06B4 /* Pods_Forex_Rate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E09EC313339BE2279AC88E8 /* Pods_Forex_Rate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E09EC313339BE2279AC88E8 /* Pods_Forex_Rate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forex_Rate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D7CD1D26ECD08967D78EE8 /* Pods-Forex Rate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forex Rate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forex Rate/Pods-Forex Rate.release.xcconfig"; sourceTree = "<group>"; };
 		A7FD8FDE21F6098A001B23A0 /* Forex Rate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forex Rate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FD8FE121F6098A001B23A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7FD8FE321F6098A001B23A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A7FD8FE821F6099C001B23A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7FD8FEB21F6099C001B23A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7FD8FED21F6099C001B23A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88D0A21A27CA65CD05D9125 /* Pods-Forex Rate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forex Rate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forex Rate/Pods-Forex Rate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2F05B5A07B6C9E240C06B4 /* Pods_Forex_Rate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E77B30BFCB5C20384D94AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D88D0A21A27CA65CD05D9125 /* Pods-Forex Rate.debug.xcconfig */,
+				98D7CD1D26ECD08967D78EE8 /* Pods-Forex Rate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		927776F997926809E3900503 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E09EC313339BE2279AC88E8 /* Pods_Forex_Rate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7FD8FD521F60989001B23A0 = {
 			isa = PBXGroup;
 			children = (
 				A7FD8FE021F6098A001B23A0 /* Forex Rate */,
 				A7FD8FDF21F6098A001B23A0 /* Products */,
+				3E77B30BFCB5C20384D94AF5 /* Pods */,
+				927776F997926809E3900503 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7FD8FF021F6099C001B23A0 /* Build configuration list for PBXNativeTarget "Forex Rate" */;
 			buildPhases = (
+				451C35BF61CD82781A7FE66E /* [CP] Check Pods Manifest.lock */,
 				A7FD8FDA21F6098A001B23A0 /* Sources */,
 				A7FD8FDB21F6098A001B23A0 /* Frameworks */,
 				A7FD8FDC21F6098A001B23A0 /* Resources */,
+				470B9FEBAA2ABC0060589150 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		451C35BF61CD82781A7FE66E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Forex Rate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		470B9FEBAA2ABC0060589150 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Forex Rate/Pods-Forex Rate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Forex Rate/Pods-Forex Rate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7FD8FDA21F6098A001B23A0 /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		A7FD8FF121F6099C001B23A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D88D0A21A27CA65CD05D9125 /* Pods-Forex Rate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +373,7 @@
 		};
 		A7FD8FF221F6099C001B23A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D7CD1D26ECD08967D78EE8 /* Pods-Forex Rate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
