@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
  
-    
+    //MARK: - Declare Variables
     var selectedCountryName = ""
     var didSelectCountryCurrency = ""
     var baseApiURL = ""
@@ -32,6 +32,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
 
+    //MARK: - IBOutlets
     @IBOutlet weak var chosenCountrylabel: UILabel!
     @IBOutlet weak var liveCurrencyLabel: UILabel!
     @IBOutlet weak var historicalCurrencyLabel: UILabel!
@@ -42,7 +43,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {
        
-    
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
         
@@ -52,10 +52,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     
-    
     @IBOutlet weak var chosenCountryOutputTextField: UITextField!
 
    
+    //MARK: - To load Date in ViewDidLoad
     func showDatePicker() {
         datePicker.datePickerMode = .date
     }
@@ -138,15 +138,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 } else {
                     
                     
-                    
                     self.historicalCurrencyLabel.text = "Connection Issues"
                 }
         }
     }
+    
+    
     //MARK: - JSON PARSING
     
     func updateLiveCurrency(json: JSON) {
-    
         
         if let data:[String: JSON] = json["quotes"].dictionaryValue {
 
